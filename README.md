@@ -17,3 +17,9 @@ The user may also specify what information needs to be included in the report.
 A program used to send notifications to customers. Each customer can either be "simple", meaning a physical person with an inbox, or "composite",
 that is, composed of a group of simple and/or composite customers.
 This program wraps each type of customer with a common interface and hides the implementation from the process of sending notifications.
+
+## Iterator
+This application consists of User objects and ChatRoom objects. Each user can join a nubmer of ChatRooms. Also, users are able to set their
+global status: visible or hidden.
+One can only iterate through the users in a chatroom, using special Iterator objects for the specific ChatRoom.
+The Iterator only caters for visible users.
