@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{1492710B-A650-4B34-BD2F-3DAC49E2B233}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{528D920A-3F37-42F2-BF62-FE183A75D33A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{528D920A-3F37-42F2-BF62-FE183A75D33A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{D83D37DE-3836-422F-B3D0-A3E81A7AB6C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D83D37DE-3836-422F-B3D0-A3E81A7AB6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83D37DE-3836-422F-B3D0-A3E81A7AB6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83D37DE-3836-422F-B3D0-A3E81A7AB6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83D37DE-3836-422F-B3D0-A3E81A7AB6C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
