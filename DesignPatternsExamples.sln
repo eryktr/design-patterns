@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mediator", "Mediator\Mediat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{9BA9219C-EC9E-4262-8B4B-31F18CFCB123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{1492710B-A650-4B34-BD2F-3DAC49E2B233}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{1492710B-A650-4B34-BD2F-3DAC49E2B233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{528D920A-3F37-42F2-BF62-FE183A75D33A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1492710B-A650-4B34-BD2F-3DAC49E2B233}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1492710B-A650-4B34-BD2F-3DAC49E2B233}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1492710B-A650-4B34-BD2F-3DAC49E2B233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528D920A-3F37-42F2-BF62-FE183A75D33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
