@@ -27,6 +27,7 @@ The Iterator only caters for visible users.
 ## Singleton
 This project consists of a singleton Logger class which caters for writing information to a file and a set of worker classes.
 The worker classess calculate a certain number of the harmonic series
-### H_n = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n ###
+#### H_n = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n
 and then write information about their execution
 to a file, using the previously mentioned logger.
+*NOTICE* This implementation of Singleton is not thread safe.
