@@ -42,3 +42,8 @@ singleton constructor (prior to the previous example) only one instance is ever 
 We have an existing interface `ISquare` which provides two methods: `GetArea()` and `GetPerimeter()`. We need to work with
 a legacy class `StrangeSquare` with one method: `GetDiagonal()`.
 An adapter is used to match the interface of the square with `IShape`.
+
+## Decorator
+We have a class responsible of processing and displaying messages: `MessageChannel`. This example provides an interface for extending (decorating) the
+message preparation process. `TrimmedMessageChannel` and `CensoredMessageChannel` augment the way messages are processed. Because of applied layers
+of abstraction, it is easy to add more decorator implementations.
