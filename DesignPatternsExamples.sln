@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{EB8ED021-85E9-4DC8-92CC-0ECD06EA9998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{9EADCC9B-8A01-4EA3-B56C-06604DE06EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{9EADCC9B-8A01-4EA3-B56C-06604DE06EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafeSingleton", "ThreadSafeSingleton\ThreadSafeSingleton.csproj", "{F2015B6E-8A44-4E96-9E2F-5E564EF3D3BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{9EADCC9B-8A01-4EA3-B56C-06604DE06EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EADCC9B-8A01-4EA3-B56C-06604DE06EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EADCC9B-8A01-4EA3-B56C-06604DE06EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2015B6E-8A44-4E96-9E2F-5E564EF3D3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2015B6E-8A44-4E96-9E2F-5E564EF3D3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2015B6E-8A44-4E96-9E2F-5E564EF3D3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2015B6E-8A44-4E96-9E2F-5E564EF3D3BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
