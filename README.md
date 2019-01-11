@@ -33,6 +33,11 @@ to a file, using the previously mentioned logger.
 
 *NOTICE* This implementation of Singleton is not thread safe.
 
+## Thread Safe Singleton
+The `ConsoleLogger` is a singleton class, which stores a counter and can log its value, together with the hash of the current object
+instance, to the console. Multiple threads are fetching an instance of the logger and calling its method. Because of enhanced 
+singleton constructor (prior to the previous example) only one instance is ever created.
+
 ## Adapter
 We have an existing interface `ISquare` which provides two methods: `GetArea()` and `GetPerimeter()`. We need to work with
 a legacy class `StrangeSquare` with one method: `GetDiagonal()`.
