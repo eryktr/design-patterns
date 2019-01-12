@@ -47,3 +47,8 @@ An adapter is used to match the interface of the square with `IShape`.
 We have a class responsible of processing and displaying messages: `MessageChannel`. This example provides an interface for extending (decorating) the
 message preparation process. `TrimmedMessageChannel` and `CensoredMessageChannel` augment the way messages are processed. Because of applied layers
 of abstraction, it is easy to add more decorator implementations.
+
+## State
+This application is a simulation of a simple ATM which can function in any of these states: `NoCard`, `CardEntered`. `PINEnterd`, `NoMoney`.
+Depending on the current state of the `ATM` object, its behavior changes respectively.
+Different operations are allowed and are implemented in a different way.
