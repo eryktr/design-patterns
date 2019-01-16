@@ -52,3 +52,9 @@ of abstraction, it is easy to add more decorator implementations.
 This application is a simulation of a simple ATM which can function in any of these states: `NoCard`, `CardEntered`. `PINEnterd`, `NoMoney`.
 Depending on the current state of the `ATM` object, its behavior changes respectively.
 Different operations are allowed and are implemented in a different way.
+
+## Command
+A simple GUI application written in WPF. The application features a label and two TextBlocks. The user can change the text
+as well as the font size of the label in question using these TextBlocks and their respective buttons.
+Each action is implemented using the `Command` design pattern. 
+What is more, every action can be undone, as well as redone.

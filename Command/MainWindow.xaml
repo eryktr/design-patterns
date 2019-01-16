@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="600">
     <Grid>
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="TextAlignment"  Value="Center"></Setter>
+            </Style>
+        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -25,7 +33,6 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -36,18 +43,15 @@
             
             <Label Content="Set Text:" Grid.Row="0" />
             <Label Content="Set Font Size:" Grid.Row="1" Grid.Column="0"/>
-            <Label Content="Set Border Width:" Grid.Row="2" Grid.Column="0"/>
 
             <TextBox Name="ContentTextBox" Grid.Column="1" Text="{Binding Mode=OneWay, ElementName=CommandLabel, Path=Content}"/>
-            <TextBox Name="FontTextBox" Grid.Column="1" Grid.Row="1" Text="{Binding ElementName=CommandLabel, Path=FontSize}"/>
-            <TextBox Name="BorderTextBox"  Grid.Column="1" Grid.Row="2" Text="{Binding ElementName=CommandLabel, Path=BorderThickness}"/>
-            
-            <Button Content="Change!" x:Name="ChangeTextButton" Grid.Column="2" Click="ChangeTextButton_Click" />
-            <Button Content="Change!" x:Name="ChangeFontButton" Grid.Column="2" Grid.Row="1" />
-            <Button Content="Change!" x:Name="ChangeBorderButton" Grid.Column="2" Grid.Row="2"/>
+            <TextBox Name="FontTextBox" Grid.Column="1" Grid.Row="1" Text="{Binding Mode=OneWay, ElementName=CommandLabel, Path=FontSize}"/>
 
-            <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" >
-                <Button Content="Undo" Name="UndoButton" Height="31" VerticalAlignment="Top" Click="UndoButton_Click" />
+            <Button Content="Change!" x:Name="ChangeTextButton" Grid.Column="2" Click="ChangeTextButton_Click" />
+            <Button Content="Change!" x:Name="ChangeFontButton" Grid.Column="2" Grid.Row="1" Click="ChangeFontButton_Click" />
+
+            <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Content="Undo" Name="UndoButton"  Click="UndoButton_Click" />
                 <Button Margin="10 0" Content="Redo" Click="Redo_Click"></Button>
             </StackPanel>
 
