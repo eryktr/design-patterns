@@ -54,7 +54,8 @@ Depending on the current state of the `ATM` object, its behavior changes respect
 Different operations are allowed and are implemented in a different way.
 
 ## Command
-A simple GUI application written in WPF. The application features a label and two TextBlocks. The user can change the text
-as well as the font size of the label in question using these TextBlocks and their respective buttons.
-Each action is implemented using the `Command` design pattern. 
+A simple GUI application written in WPF. The application features a label and two TextBoxes. The user can interfere with the way that the text
+is displayed as in the label in question by altering the TextBoxes and clicking their respective buttons.
+Each action is implemented using the `Command` design pattern. That way, different request may be passed to different buttons under the same interface:
+`ICommand`. This means that the high level module needs no knowledge of implementation details.
 What is more, every action can be undone, as well as redone.
